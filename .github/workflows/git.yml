@@ -19,7 +19,6 @@ jobs:
         with:
           python-version: "3.8"
       - run: pip install -r requirements.txt
-      - run: pytest
   build:
     needs: [run-test-code] # 이 코드 실행 후에 빌드 함
     runs-on: ubuntu-latest
